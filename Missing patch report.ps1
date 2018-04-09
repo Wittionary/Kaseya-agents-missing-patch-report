@@ -10,9 +10,9 @@ Param(
 
 <# --------------------------------------------------------------------------------------------------------------
 Kaseya VSA Missing Patch Report
-Version: 20180409a
+Version: 20180409b
 Made by: Witt Allen
-Objective: Remotely install the designated Kaseya agent on computers that have recently contacted the Domain Controller
+Objective: Return a list of machines missing the KB article IDs that are input
 
 DEPENDANCIES & ASSUMPTIONS:
 - Script will be ran as Administrator
