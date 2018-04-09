@@ -8,6 +8,18 @@ Param(
     [string]$organizationID
 )
 
+<# --------------------------------------------------------------------------------------------------------------
+Kaseya VSA Missing Patch Report
+Version: 20180409a
+Made by: Witt Allen
+Objective: Remotely install the designated Kaseya agent on computers that have recently contacted the Domain Controller
+
+DEPENDANCIES & ASSUMPTIONS:
+- Script will be ran as Administrator
+- Script will be ran on VSA database server
+# --------------------------------------------------------------------------------------------------------------
+#>
+
 $kbList = Get-Content -Path $listPath
 
 $reportName = "Patch report "
